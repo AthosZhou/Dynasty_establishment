@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.StuMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_size_25"
+            android:background="@color/self_grey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@color/self_grey">
+            <TextView
+                android:id="@+id/stu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stu_tk"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/stu_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="+"
+                android:textSize="30dp"
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/stu_FL"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/stu_gp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/stu_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/stu_tk"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_talk"
+                style="@style/Stu_buttom"/>
+            <RadioButton
+                android:id="@+id/stu_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/stu_lt"
+                android:drawableTop="@drawable/selector_contact"
+                style="@style/Stu_buttom"/>
+            <RadioButton
+            android:id="@+id/stu_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/stu_vd"
+            android:drawableTop="@drawable/selector_video"
+            style="@style/Stu_buttom"/>
+            <RadioButton
+                android:id="@+id/stu_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="微课堂"
+                android:drawableTop="@drawable/selector_classroom"
+                style="@style/Stu_buttom"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:background="@color/self_grey">
+            <TextView
+                android:id="@+id/stu_accid"
+                android:drawableTop="@drawable/stuic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/stu_find_hk_al"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订正复习"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/stu_find_hk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="完成作业"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/stu_joinclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加入班级"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/stu_punch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:text="签到"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/stu_Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登出"
+                android:background="@color/color_red_ccfa3c55" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Teacher.TeaMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@color/self_grey">
+            <TextView
+                android:id="@+id/tea_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stu_tk"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tea_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="+"
+                android:textSize="30dp"
+                />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/tea_FL"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/tea_gp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/tea_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/stu_tk"
+                android:drawableTop="@drawable/selector_talk"
+                android:checked="true"
+                style="@style/Stu_buttom"/>
+            <RadioButton
+                android:id="@+id/tea_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/stu_lt"
+                android:drawableTop="@drawable/selector_contact"
+                style="@style/Stu_buttom"/>
+            <RadioButton
+                android:id="@+id/tea_video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/stu_vd"
+                android:drawableTop="@drawable/selector_video"
+                style="@style/Stu_buttom"/>
+            <RadioButton
+                android:id="@+id/tea_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="微课堂"
+                android:drawableTop="@drawable/selector_classroom"
+                style="@style/Stu_buttom"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:background="@color/self_grey">
+            <TextView
+                android:id="@+id/tea_accid"
+                android:gravity="center"
+                android:drawableTop="@drawable/teaic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/tea_exammanage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="作业管理"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/tea_createclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="创建班级"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/tea_punch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="签到"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+            android:id="@+id/tea_Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登出"
+            android:background="@color/color_red_ccfa3c55" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/stu_hk_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:id="@+id/stu_hk_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_30"
+            android:text="一元函数微分学"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/stu_hk_info"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="董老师发布于2019-3-12"
+            android:textColor="@color/color_yellow_b39729"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/stu_hk_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成"
+            android:textColor="@color/color_red_ccfa3c55"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

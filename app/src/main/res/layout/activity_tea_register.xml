@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Teacher.TeaRegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shadow">
+
+        <EditText
+            android:id="@+id/Register_TeaNo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入工号"/>
+        <EditText
+            android:id="@+id/Register_TeaName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入真实姓名"/>
+
+        <EditText
+            android:id="@+id/Register_TeaPwd"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入密码"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/Register_TeaTel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="请输入手机号"/>
+            <Button
+                android:id="@+id/Register_TeaVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="获取注册码"
+                style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Register_TeaCode"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入获取的验证码"/>
+
+        <Button
+            android:id="@+id/Register_TeaSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            style="@style/ButtonStyle"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
