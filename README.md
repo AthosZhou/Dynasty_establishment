@@ -1,4 +1,4 @@
-# Dynasty_establishment
+# 基于Android的高等数学线上学习平台设计与研发
 
 毕业设计 Android项目 WebAPI请移步至http://47.106.38.118:2333/ 对象存储使用aliyun oss 请不要频繁访问！
 
